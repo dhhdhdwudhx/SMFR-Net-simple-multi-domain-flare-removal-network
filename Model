@@ -27,7 +27,7 @@ class FDM(nn.Module):
         )
         
         self.freq_modulator = nn.Sequential(
-            nn.Conv2d(1, 8, 1),  # 轻量级处理
+            nn.Conv2d(1, 8, 1),  
             nn.LeakyReLU(0.1, inplace=True),
             nn.Conv2d(8, 1, 1),
             nn.Sigmoid()
